@@ -22,7 +22,7 @@ class App extends Component{
                 <button id={Style.button1} className = {Style.button} onClick = {() => this.setState({funcClick : !this.state.funcClick}) }>To see styling in functional component</button>
                 <button id={Style.button2} className = {Style.button} onClick = {() => this.setState({classClick : !this.state.classClick})}>To see styling in class component</button>
             </div>
-            <div Style="display: flex; width: 100vw; height: 100vh;">
+            <div Style="display: flex; width: 90vw; height: 76vh;">
             {this.state.funcClick ? <FunctionalComponent /> : null}
             {this.state.classClick ? <ClassComponent /> : null}
             </div>
